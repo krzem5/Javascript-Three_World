@@ -1,0 +1,203 @@
+{
+	"actions": [],
+	"cam": {
+		"pos": {
+			"x": -40,
+			"y": 60,
+			"z": -50
+		}
+	},
+	"colors": [
+		"#51c6d6",
+		"#72d142",
+		"#bc996b",
+		"#c48fef",
+		"#f94a2f",
+		"#eedf40",
+		"#86c8f9",
+		"#eaeaea",
+		"#282828"
+	],
+	"data": [
+		{
+			"args": {
+				"start_player_dir": 0
+			},
+			"color": 2,
+			"pos": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"type": "start"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 0,
+				"y": 0,
+				"z": 1
+			},
+			"type": "box"
+		},
+		{
+			"args": {
+				"color": 8,
+				"to_dark": true
+			},
+			"color": 3,
+			"pos": {
+				"x": 0,
+				"y": 0,
+				"z": 2
+			},
+			"type": "switch"
+		},
+		{
+			"args": {
+				"dark": true
+			},
+			"color": 2,
+			"pos": {
+				"x": 1,
+				"y": 0,
+				"z": 2
+			},
+			"type": "box"
+		},
+		{
+			"args": {
+				"dark": true
+			},
+			"color": 2,
+			"pos": {
+				"x": 2,
+				"y": 0,
+				"z": 2
+			},
+			"type": "box"
+		},
+		{
+			"args": {
+				"dark": true
+			},
+			"color": 2,
+			"pos": {
+				"x": 3,
+				"y": 0,
+				"z": 2
+			},
+			"type": "box"
+		},
+		{
+			"args": {
+				"dark": true
+			},
+			"color": 2,
+			"pos": {
+				"x": 3,
+				"y": 0,
+				"z": 1
+			},
+			"type": "box"
+		},
+		{
+			"args": {
+				"color": 5,
+				"ignore_theme": true,
+				"reward_color": 6,
+				"reward_data": {
+					"args": [
+						2,
+						1,
+						2,
+						16,
+						1
+					],
+					"name": "cylinder"
+				}
+			},
+			"color": 0,
+			"pos": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"type": "end"
+		},
+		{
+			"color": 1,
+			"pos": {
+				"x": 1,
+				"y": -1,
+				"z": 2
+			},
+			"type": "beam"
+		},
+		{
+			"color": 1,
+			"pos": {
+				"x": 1,
+				"y": 0,
+				"z": 2
+			},
+			"type": "beam"
+		},
+		{
+			"args": {
+				"ignore_theme": true
+			},
+			"color": 1,
+			"pos": {
+				"x": 1,
+				"y": 1,
+				"z": 2
+			},
+			"type": "beam"
+		},
+		{
+			"args": {
+				"ignore_theme": true
+			},
+			"color": 1,
+			"pos": {
+				"x": 1,
+				"y": 2,
+				"z": 2
+			},
+			"type": "beam"
+		},
+		{
+			"args": {
+				"flag": true,
+				"ignore_theme": true
+			},
+			"color": 1,
+			"pos": {
+				"x": 1,
+				"y": 3,
+				"z": 2
+			},
+			"type": "roof"
+		}
+	],
+	"desc": "In which Mr.Stickman discovers the other side",
+	"light": {
+		"pos": {
+			"x": -500,
+			"y": 1000,
+			"z": -1000
+		},
+		"target_pos": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"name": "Level III",
+	"size": {
+		"x": 5,
+		"y": 5,
+		"z": 5
+	}
+}
