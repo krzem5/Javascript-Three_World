@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="./js/three/three.min.js"></script>
+		<script type="text/javascript" src="./js/three/OrbitControls.js"></script>
+		<script type="text/javascript" src="./js/three/MeshLine.js"></script>
+		<script type="text/javascript" src="./js/class/BaseBlock.js"></script>
+		<script type="text/javascript" src="./js/class/BoxBlock.js"></script>
+		<script type="text/javascript" src="./js/class/BeamBlock.js"></script>
+		<script type="text/javascript" src="./js/class/RoofBlock.js"></script>
+		<script type="text/javascript" src="./js/class/ButtonBlock.js"></script>
+		<script type="text/javascript" src="./js/class/SwitchBlock.js"></script>
+		<script type="text/javascript" src="./js/class/StartBlock.js"></script>
+		<script type="text/javascript" src="./js/class/EndBlock.js"></script>
+		<script type="text/javascript" src="./js/class/Marker.js"></script>
+		<script type="text/javascript" src="./js/class/Player.js"></script>
+		<script type="text/javascript" src="./js/class/PlayerModel.js"></script>
+		<script type="text/javascript" src="./js/main/setup.js"></script>
+		<script type="text/javascript" src="./js/main/init.js"></script>
+		<style type="text/css">
+			@font-face {
+				font-family: "KuaiLe";
+				src: url("./font/kuaile.ttf");
+			}
+			@font-face {
+				font-family: "Gugi";
+				src: url("./font/gugi.ttf");
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+			canvas {
+				width: 100%;
+				height: 100%;
+			}
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				font-family: Gugi;
+				font-size: 200px;
+				text-align: center;
+				color: #191919;
+				white-space: nowrap;
+				opacity: 0;
+				user-select: none;
+			}
+			.overlay .name {
+				position: absolute;
+				top: 250px;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			.overlay .desc {
+				position: absolute;
+				top: 400px;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				font-size: 60px;
+			}
+			.overlay .help-text {
+				position: absolute;
+				bottom: 60px;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cnv">
+		</div>
+		<div class="overlay">
+			<div class="name">LEVEL NAME</div>
+			<div class="desc">LEVEL DESC</div>
+			<div class="help-text">[Tap anywhere to continue]</div>
+		</div>
+	</body>
+</html>
