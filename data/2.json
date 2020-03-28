@@ -1,0 +1,155 @@
+{
+	"actions": [],
+	"cam": {
+		"pos": {
+			"x": -40,
+			"y": 60,
+			"z": -50
+		}
+	},
+	"colors": [
+		"#51c6d6",
+		"#72d142",
+		"#bc996b",
+		"#c48fef",
+		"#f94a2f",
+		"#eedf40",
+		"#86c8f9",
+		"#eaeaea",
+		"#282828"
+	],
+	"data": [
+		{
+			"args": {
+				"start_player_dir": 0
+			},
+			"color": 2,
+			"pos": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"type": "start"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 1,
+				"y": 0,
+				"z": 0
+			},
+			"type": "box"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 2,
+				"y": 0,
+				"z": 0
+			},
+			"type": "box"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"type": "box"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 4,
+				"y": 0,
+				"z": 0
+			},
+			"type": "box"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 4,
+				"y": 0,
+				"z": 1
+			},
+			"type": "box"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 4,
+				"y": 0,
+				"z": 2
+			},
+			"type": "box"
+		},
+		{
+			"color": 2,
+			"pos": {
+				"x": 4,
+				"y": 0,
+				"z": 3
+			},
+			"type": "box"
+		},
+		{
+			"color": 0,
+			"pos": {
+				"x": 0,
+				"y": 1,
+				"z": 0
+			},
+			"type": "beam"
+		},
+		{
+			"color": 0,
+			"pos": {
+				"x": 0,
+				"y": 2,
+				"z": 0
+			},
+			"type": "beam"
+		},
+		{
+			"args": {
+				"color": 5,
+				"reward_color": 6,
+				"reward_data": {
+					"args": [
+						2,
+						1
+					],
+					"name": "dodecahedron"
+				}
+			},
+			"color": 0,
+			"pos": {
+				"x": 0,
+				"y": 3,
+				"z": 0
+			},
+			"type": "end"
+		}
+	],
+	"desc": "In which Mr.Stickman discovers something wierd",
+	"light": {
+		"pos": {
+			"x": -500,
+			"y": 1000,
+			"z": -1000
+		},
+		"target_pos": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		}
+	},
+	"name": "Level II",
+	"size": {
+		"x": 5,
+		"y": 5,
+		"z": 5
+	}
+}
