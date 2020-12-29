@@ -1,1 +1,4 @@
 ### Github File Push Ignore
+
+data
+!data/*.json
