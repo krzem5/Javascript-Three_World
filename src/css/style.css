@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "KuaiLe";
+	src: url("./font/kuaile.ttf");
+}
+@font-face {
+	font-family: "Gugi";
+	src: url("./font/gugi.ttf");
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+canvas {
+	width: 100%;
+	height: 100%;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Gugi;
+	font-size: 200px;
+	text-align: center;
+	color: #191919;
+	white-space: nowrap;
+	opacity: 0;
+	user-select: none;
+}
+.overlay .name {
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.overlay .desc {
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 60px;
+}
+.overlay .help-text {
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 40px;
+}
