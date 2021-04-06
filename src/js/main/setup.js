@@ -28,7 +28,7 @@ function setup(){
 	window.THEME=0
 	fetch(`./data/${LEVEL_NAME}.json`).then((r)=>r.json()).then(function(json){
 		function _w(){
-			a=[]
+			let a=[]
 			for (var x=0;x<SIZE.w;x++){
 				a.push([])
 				for (var y=0;y<SIZE.h;y++){
@@ -81,7 +81,7 @@ function setup(){
 			COLORS.push(parseInt(c.substring(1),16))
 		}
 		for (var o of json.data){
-			b=new window[o.type.substring(0,1).toUpperCase()+o.type.substring(1)+"Block"](o.pos.x,o.pos.y,o.pos.z,COLORS[o.color]||0x000000,o.args||{})
+			let b=new window[o.type.substring(0,1).toUpperCase()+o.type.substring(1)+"Block"](o.pos.x,o.pos.y,o.pos.z,COLORS[o.color]||0x000000,o.args||{})
 			if (b.type=="start"){
 				if (START_BLOCK!=null){
 					START_BLOCK.type="box"

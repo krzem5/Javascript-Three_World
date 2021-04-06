@@ -23,11 +23,6 @@ class EndBlock extends BaseBlock{
 			if (faces[5]==true){group.add(side(-w/2,0,0,0,-Math.PI/2,0,d,h,color))}
 			return group
 		}
-		function beam(x,z,h,c,f){
-			var mesh=box(f,1,h,1,c)
-			mesh.position.set(x,h/2-5,z)
-			return mesh
-		}
 		var group=new THREE.Group()
 		group.add(box([true,true,true,true,true,true],10,10,10,this.color))
 		var m=box([true,true,true,false,true,true],6,3,6,COLORS[this.args.color]||0x000000)
@@ -79,7 +74,6 @@ class EndBlock extends BaseBlock{
 		function f(c=0){
 			if (c<=up_steps){
 				ths.reward_object.position.y+=(u-ths.reward_object.position.y)*0.025
-				PLAYER.model.angles
 			}
 			else if(c>up_steps+wait_frames){
 				var v=e.get_end_pos().sub(ths.object.position)

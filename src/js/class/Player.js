@@ -106,7 +106,7 @@ class Player{
 				i++
 				continue
 			}
-			var d=cd
+			let d;
 			if (p.length>3){
 				if (p[4]==true){
 					np.push({type:"set",pos:{x:p[1],y:p[2],z:p[3]}})

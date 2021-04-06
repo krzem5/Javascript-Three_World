@@ -1,4 +1,4 @@
-var scene,cam,renderer,controls,RAYCATSER,LIGHT,OVERLAY
+var scene,cam,renderer,RAYCATSER,LIGHT,OVERLAY
 function init(){
 	scene=new THREE.Scene()
 	cam=new THREE.OrthographicCamera(window.innerWidth/-2,window.innerWidth/2,window.innerHeight/2,window.innerHeight/-2,0.1,100000)
@@ -10,8 +10,7 @@ function init(){
 	renderer.setSize(window.innerWidth,window.innerHeight)
 	scene.background=new THREE.Color().setHSL(1,1,1)
 	document.getElementsByClassName("cnv")[0].appendChild(renderer.domElement)
-	ambient=new THREE.AmbientLight(0xececec,1)
-	scene.add(ambient)
+	scene.add(new THREE.AmbientLight(0xececec,1))
 	var point=new THREE.SpotLight(0xffffff,1,0,1)
 	point.position.set(1000,500,750)
 	point.target.position.set(0,0,0)

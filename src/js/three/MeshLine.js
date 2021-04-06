@@ -32,7 +32,7 @@ THREE.MeshLine.prototype.constructor = THREE.MeshLine;
 
 /// <summary>MeshLine material</summary>
 /// parameter.vertexColor = set to THREE.NoColors to use linecolor from the material itself. True to use geometry's own color.
-/// properties: 
+/// properties:
 /// linewidth = define, in world space, the width of the line.
 /// linecolor = define the color of the line if vertexColor = THREE.NoColors;
 THREE.MeshLineMaterial = function (parameter) {
@@ -124,7 +124,6 @@ THREE.BufferMeshLineGeometry.prototype.fromGeometry = function (geometry) {
     var lineSegCount = geometry.vertices.length - 1;
     var innerPtCount = geometry.vertices.length - 2;
     var totalSegCount = lineSegCount + innerPtCount;
-    var faceCount = totalSegCount * 2;
 
     var positions = new THREE.Float32BufferAttribute(expCount * 3, 3);
     var otherPositions = new THREE.Float32BufferAttribute(expCount * 3, 3);
