@@ -123,7 +123,6 @@ THREE.BufferMeshLineGeometry.prototype.fromGeometry = function (geometry) {
     var expCount = geometry.vertices.length * 4 - 4;
     var lineSegCount = geometry.vertices.length - 1;
     var innerPtCount = geometry.vertices.length - 2;
-    var totalSegCount = lineSegCount + innerPtCount;
 
     var positions = new THREE.Float32BufferAttribute(expCount * 3, 3);
     var otherPositions = new THREE.Float32BufferAttribute(expCount * 3, 3);
